@@ -7,6 +7,8 @@
     return declare([ContentQueryGrid], {
         sortKey: null,
         descending: false,
+        contextChangeEvent: "dblclick",
+        selectionMode: "extended",
 
         _onContextChangedReloadTimeout: null,
         _refreshInterval: 5000,
